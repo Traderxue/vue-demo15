@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import {showToast} from "vant"
 
 const loading = ref(false);
 
@@ -43,6 +44,6 @@ const onRefresh = () => {
 
 <style lang="scss" scoped>
 .index{
-    padding: 15px;
+  padding: 15px 0px;
 }
 </style>
