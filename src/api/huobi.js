@@ -6,6 +6,12 @@ export const getPrice = (type) => {
     })
 }
 
+export const getDetail = (type) =>{
+    return http({
+        url:`https://api.huobi.pro/market/depth?symbol=${type}usdt&depth=5&type=step0`
+    })
+} 
+
 export const getKline = (type, min) => {
     return http({
         url: ""
