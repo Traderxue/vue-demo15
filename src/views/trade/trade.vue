@@ -1,3 +1,3 @@
 <template>
-    <div>wallet</div>
+    <div>trade</div>
 </template>

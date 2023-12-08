@@ -4,21 +4,23 @@ import { useRouter } from "vue-router";
 
 const router = useRouter();
 
-const active = ref("");
+const active = ref(1);
 
 const navList = ref([
   {
     path: "/optional",
     title: "自选",
+    nav: 1,
   },
   {
     path: "/usdt",
     title: "USDT",
+    nav: 2,
   },
 ]);
 
 const goTab = (item) => {
-  active.value = item.title;
+  active.value = item.nav;
   router.push(item.path);
 };
 </script>
@@ -32,7 +34,7 @@ const goTab = (item) => {
       <span
         v-for="(item, index) in navList"
         :key="index"
-        :class="active == '自选' ? 'active' : ''"
+        :class="item.nav == active ? 'active' : ''"
         @click="goTab(item)"
         >{{ item.title }}</span
       >

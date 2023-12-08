@@ -34,8 +34,8 @@ const router = createRouter({
           ])
         },
         {
-          path:"/wallet",
-          component:()=>import("@/views/wallet/wallet.vue")
+          path:"/trade",
+          component:()=>import("@/views/trade/trade.vue")
         },
         {
           path:"/mine",
