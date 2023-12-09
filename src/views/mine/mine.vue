@@ -97,7 +97,7 @@ const typeList = ref([
       padding: 10px 0px;
     }
     span {
-      font-size: 13px;
+      font-size: 12px;
     }
   }
   .box {
